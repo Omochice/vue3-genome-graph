@@ -1,0 +1,52 @@
+name: Publish to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [16.x]
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: build-pages
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7.9.5
+      - name: setup node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+      - name: run pnpm install
+        run: pnpm install
+      - name: run pnpm test
+        run: pnpm build
+
+      - name: upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
+
+
+
+
