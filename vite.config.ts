@@ -4,6 +4,7 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/vue3-genome-graph/",
   plugins: [vue()],
   resolve: {
     alias: {
