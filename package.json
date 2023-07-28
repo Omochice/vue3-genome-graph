@@ -10,7 +10,7 @@
     "format": "prettier --write src/**/*.vue src/**/*.ts"
   },
   "dependencies": {
-    "chart.js": "^3.9.1",
+    "chart.js": "^4.0.0",
     "vue": "^3.2.37",
     "vue-chartjs": "^4.1.2"
   },
