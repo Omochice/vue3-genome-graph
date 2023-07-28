@@ -15,7 +15,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
       - name: build-pages
-        uses: pnpm/action-setup@v2.2.2
+        uses: pnpm/action-setup@v2.4.0
         with:
           version: 7.9.5
       - name: setup node.js
