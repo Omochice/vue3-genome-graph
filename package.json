@@ -12,7 +12,7 @@
   "dependencies": {
     "chart.js": "^3.9.1",
     "vue": "^3.2.37",
-    "vue-chartjs": "^4.1.2"
+    "vue-chartjs": "^5.0.0"
   },
   "devDependencies": {
     "@types/node": "^18.7.23",
