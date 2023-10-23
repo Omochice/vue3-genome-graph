@@ -19,7 +19,7 @@ jobs:
         with:
           version: 7.9.5
       - name: setup node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
       - name: run pnpm install
