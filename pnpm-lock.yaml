@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/node': ^18.7.23
-  '@vitejs/plugin-vue': ^3.1.0
+  '@vitejs/plugin-vue': ^5.0.0
   chart.js: ^3.9.1
   prettier: ^3.0.0
   typescript: ^4.6.4
@@ -18,7 +18,7 @@ dependencies:
 
 devDependencies:
   '@types/node': 18.7.23
-  '@vitejs/plugin-vue': 3.1.0_vite@3.1.4+vue@3.2.40
+  '@vitejs/plugin-vue': 5.0.0_vite@3.1.4+vue@3.2.40
   prettier: 3.0.0
   typescript: 4.8.4
   vite: 3.1.4
@@ -71,11 +71,11 @@ packages:
     resolution: {integrity: sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg==}
     dev: true
 
-  /@vitejs/plugin-vue/3.1.0_vite@3.1.4+vue@3.2.40:
-    resolution: {integrity: sha512-fmxtHPjSOEIRg6vHYDaem+97iwCUg/uSIaTzp98lhELt2ISOQuDo2hbkBdXod0g15IhfPMQmAxh4heUks2zvDA==}
-    engines: {node: ^14.18.0 || >=16.0.0}
+  /@vitejs/plugin-vue/5.0.0_vite@3.1.4+vue@3.2.40:
+    resolution: {integrity: sha512-7x5e8X4J1Wi4NxudGjJBd2OFerAi/0nzF80ojCzvfj347WVr0YSn82C8BSsgwSHzlk9Kw5xnZfj0/7RLnNwP5w==}
+    engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
-      vite: ^3.0.0
+      vite: ^5.0.0
       vue: ^3.2.25
     dependencies:
       vite: 3.1.4
